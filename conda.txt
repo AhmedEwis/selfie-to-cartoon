@@ -1,4 +1,4 @@
-cmake==3.18.4.post1
+cmake
 contextlib2==0.6.0.post1
 dlib==19.22.0
 face-alignment==1.3.3
