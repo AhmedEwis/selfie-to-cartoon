@@ -1,4 +1,0 @@
-cmake 
-cmake-curses-gui 
-libatlas-base-dev 
-libboost-all-dev
