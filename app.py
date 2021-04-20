@@ -101,11 +101,14 @@ if __name__ == '__main__':
 
         col1.header("Original")
         cartoon = c2p.inference(img)
-        if cartoon.all() == None:
-            img = Image.open(image_file).convert('RGB') 
-            img = img.rotate(270)
-            img = np.array(img)
-            cartoon = c2p.inference(img)
+        try:
+            if cartoon == None:
+                img = Image.open(image_file).convert('RGB') 
+                img = img.rotate(270)
+                img = np.array(img)
+                cartoon = c2p.inference(img)
+        except:
+            pass
         col1.image(img, use_column_width=True)
 
         st.markdown('<h3 align="center">Image uploaded successfully!</h3>', unsafe_allow_html=True)
