@@ -102,7 +102,9 @@ if __name__ == '__main__':
         col1.header("Original")
         cartoon = c2p.inference(img)
         if cartoon == None:
-            out = img.rotate(90)
+            img = Image.open(image_file).convert('RGB') 
+            img = img.rotate(90)
+            img = np.array(img)
             cartoon = c2p.inference(img)
         col2.image(img, use_column_width=True)
 
