@@ -100,12 +100,12 @@ if __name__ == '__main__':
         col1, col2 = st.beta_columns(2)
 
         col1.header("Original")
-        col1.image(img, use_column_width=True)
-
+        st.image(img, use_column_width=True)
+        
         cartoon = c2p.inference(img)
         st.markdown('<h3 align="center">Image uploaded successfully!</h3>', unsafe_allow_html=True)
         col2.header("Cartoon")
-        col2.image(cv2.cvtColor(cartoon, cv2.COLOR_BGR2RGB), use_column_width=True)
+        st.image(cv2.cvtColor(cartoon, cv2.COLOR_BGR2RGB), use_column_width=True)
        # cv2.imwrite('./images/result.png', cartoon)
         
         
