@@ -2,7 +2,7 @@
 
 Streamlit demo on Google Cloud Platform which can transform selfie into cartoon image using GAN model. \
 Examples: \
-<img src="https://github.com/LizaKurilo/selfie-to-cartoon/blob/master/images/image.jpg" width="700" height="550">
+<img src="https://github.com/LizaKurilo/selfie-to-cartoon/blob/master/images/Unknown.jpg" width="700" height="550">
 <img src="https://github.com/LizaKurilo/selfie-to-cartoon/blob/master/images/image2.png" width="700" height="550"> \
 <img src="https://github.com/LizaKurilo/selfie-to-cartoon/blob/master/images/im.jpg" width="270" height="500">
 <img src="https://github.com/LizaKurilo/selfie-to-cartoon/blob/master/images/im2.jpg" width="270" height="500">
