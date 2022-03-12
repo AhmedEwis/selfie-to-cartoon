@@ -100,7 +100,7 @@ if __name__ == '__main__':
             #img = cv2.cvtColor(cv2.imread(image_file), cv2.COLOR_BGR2RGB)
         img = Image.open(image_file).convert('RGB') 
         img = np.array(img)
-        col1, col2 = st.beta_columns(2)
+        col1, col2 = st.columns(2)
 
         col1.header("Original")
         cartoon = c2p.inference(img)
