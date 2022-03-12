@@ -14,8 +14,8 @@ class FaceSeg:
         config = tf.compat.v1.ConfigProto()
         config.gpu_options.allow_growth = True
         self._graph = tf.Graph()
-        self._sess = tf.Session(config=config, graph=self._graph)
-        #self._sess = tf.compat.v1.Session(config=config, graph=self._graph)
+        #self._sess = tf.Session(config=config, graph=self._graph)
+        self._sess = tf.compat.v1.Session(config=config, graph=self._graph)
 
         self.pb_file_path = model_path
         self._restore_from_pb()
@@ -27,8 +27,8 @@ class FaceSeg:
             with self._graph.as_default():
                 with gfile.FastGFile(self.pb_file_path, 'rb') as f:
                     graph_def = tf.GraphDef()
-                    #graph_def = tf.compat.v1.GraphDef()
-                    graph_def.ParseFromString(f.read())
+                    graph_def = tf.compat.v1.GraphDef()
+                    #graph_def.ParseFromString(f.read())
                     tf.import_graph_def(graph_def, name='')
 
     def input_transform(self, image):
