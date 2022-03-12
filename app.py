@@ -128,4 +128,4 @@ if __name__ == '__main__':
         img = Image.open('./images/your_image.png').convert('RGB') 
         img = np.array(img)
     
-  #
+  
