@@ -13,7 +13,7 @@ from io import BytesIO
 import base64
 
 # Setting custom Page Title and Icon with changed layout and sidebar state
-st.beta_set_page_config(page_title='Photo to Cartoon', layout='centered', initial_sidebar_state='expanded')
+st.set_page_config(page_title='Photo to Cartoon', layout='centered', initial_sidebar_state='expanded')
 
 def local_css(file_name):
     """ Method for reading styles.css and applying necessary changes to HTML"""
