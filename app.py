@@ -6,7 +6,10 @@ from models import ResnetGenerator
 import argparse
 from utils import Preprocess
 from PIL import Image
+import ssl
+import certifi
 
+urlopen(request, context=ssl.create_default_context(cafile=certifi.where()))
 import streamlit as st
 import gdown
 from io import BytesIO
