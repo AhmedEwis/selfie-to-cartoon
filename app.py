@@ -9,7 +9,8 @@ from PIL import Image
 import ssl
 import certifi
 import ssl
-ssl._create_default_https_context = ssl._create_unverified_contextimport streamlit as st
+ssl._create_default_https_context = ssl._create_unverified_context
+import streamlit as st
 import gdown
 from io import BytesIO
 import base64
